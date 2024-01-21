@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto&display=swap"
@@ -16,7 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css">
 
     <title>Document</title>
 </head>
@@ -422,53 +422,44 @@
         <div class="modal-window">
             <p class="modal-description">Leave your contacts and we will call you back</p>
             <form>
+                <!-- name -->
                 <div class="modal-form-container">
+                        <label class="name" for="user-name">Name</label>
                     <div class="modal-input-container">
-                        <label class="name" for="user-name">Name
-                        </label>
-                    </div>
-                    <div class="modal-input">
-                        <input id="user-name" name="user-name" type="text" class="user-name">
+                        <input id="user-name" name="user-name" type="text" class="modal-input">
                         <svg height="24px" width="18" class="user-person">
                             <use href="./images/icons.svg#modal-person"></use>
                         </svg>
-                    </div>
+                    </div>   
                 </div>
-
+                <!-- phone -->
                 <div class="modal-form-container">
+                    <label class="name" for="user-name">Phone</label>
                     <div class="modal-input-container">
-                        <label class="name" for="user-name">Phone
-                        </label>
-                    </div>
-                    <div class="modal-input">
-                        <input id="user-name" name="user-name" type="text" class="user-name">
+                        <input id="phone" name="user-name" type="text" class="modal-input">
                         <svg height="24px" width="18" class="user-person">
                             <use href="./images/icons.svg#modal-phone"></use>
                         </svg>
                     </div>
                 </div>
-
+                <!-- email -->
                 <div class="modal-form-container">
+                    <label class="name" for="user-name">Email</label>
                     <div class="modal-input-container">
-                        <label class="name" for="user-name">Email
-                        </label>
-                    </div>
-                    <div class="modal-input">
-                        <input id="user-name" name="user-name" type="text" class="user-name">
+                        <input id="email-address" name="user-name" type="text" class="modal-input">
                         <svg height="24px" width="18" class="user-person">
                             <use href="./images/icons.svg#modal-message"></use>
                         </svg>
                     </div>
                 </div>
+                <!-- comment -->
                 <div class="comment-container">
-                      <label for="user-comment" class="name">Comment</label>
-                      <textarea id="user-comment" name="user-comment" placeholder="Text input" class="user-comment"></textarea>
+                    <label for="user-comment" class="name">Comment</label>
+                    <textarea id="user-comment" name="user-comment" placeholder="Text input" class="user-comment"></textarea>
                 </div>
                 <div class="terms-container">
-                    <input id="user-privacy" type="checkbox" value="true" name="user-privacy" class="user-privacy" visually hidden>
-                    <label class="terms" for="user-privacy">I accept the terms and conditions of the<span class="privacy-link"><svg width="10" height="8" class="privacy-icon">
-                        <use href=""></use>
-                    </svg></span></label>
+                    <input type="checkbox" id="user-privacy" value="true" class="terms-checkbox visually-hidden">
+                    <label class="label-checkbox" for="user-privacy">I accept the terms and conditions of the<span class="span-checkbox"></span></label>
                 </div>
             </form>
             <button class="modal-button" type="button" data-modal-close>
