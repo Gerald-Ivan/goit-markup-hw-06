@@ -742,9 +742,32 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
-    
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;   
+}
+.checkbox:checked + .span-checkbox{
+  background-color: var(--pressed-state);
+  border: none;
+  fill: var(--light);
+}
+.link-checkbox{
+  color: var(--primary-brand);
+}
+/* button modal */
+.submit-modal{
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  font-family: var(--roboto-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-background);
+  cursor: pointer;
+  background-color: var(--primary-brand);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
