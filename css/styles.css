@@ -689,6 +689,7 @@ img {
   background-color: transparent;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: transparent;
 }
 .modal-input:focus{
   border-color: var(--primary-brand);
@@ -700,7 +701,7 @@ img {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.user-person:focus svg{
+.modal-input:focus + .user-person{
   fill: var(--primary-brand);
 }
 .comment-container{
@@ -721,19 +722,19 @@ img {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.user-comment{
+.user-comment:focus{
   border-color: var(--primary-brand);
 }
 .terms-container{
   margin-bottom: 24px;
 }
-.label-checkbox{
+/* .label-checkbox{
   display: block;
   font-size: 12px;
   line-height: 1.17em;
   letter-spacing: 0.04em;
   color: var(--subtle-text);
-}
+} */
 .span-checkbox{
   width: 16px;
   height: 16px;
@@ -747,7 +748,10 @@ img {
   justify-content: center;
   fill: transparent;   
 }
-.checkbox:checked + .span-checkbox{
+.modal-checkbox{
+  background-color: var(--white-background);
+}
+.terms-checkbox:checked{
   background-color: var(--pressed-state);
   border: none;
   fill: var(--light);
