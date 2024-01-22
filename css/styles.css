@@ -769,5 +769,7 @@ img {
   cursor: pointer;
   background-color: var(--primary-brand);
   border-radius: 4px;
+  border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0px 95px;
 }
