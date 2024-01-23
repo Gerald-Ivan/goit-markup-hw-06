@@ -698,6 +698,7 @@ img {
   position: absolute;
   left: 16px;
   top: 50%;
+  fill: var(--modal-overlay);
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -728,13 +729,13 @@ img {
 .terms-container{
   margin-bottom: 24px;
 }
-/* .label-checkbox{
+.label-checkbox{
   display: block;
   font-size: 12px;
   line-height: 1.17em;
   letter-spacing: 0.04em;
   color: var(--subtle-text);
-} */
+}
 .span-checkbox{
   width: 16px;
   height: 16px;
@@ -748,10 +749,10 @@ img {
   justify-content: center;
   fill: transparent;   
 }
-.modal-checkbox{
+/* .modal-checkbox{
   background-color: var(--white-background);
-}
-.terms-checkbox:checked{
+} */
+.terms-checkbox:checked + .span-checkbox{
   background-color: var(--pressed-state);
   border: none;
   fill: var(--light);
