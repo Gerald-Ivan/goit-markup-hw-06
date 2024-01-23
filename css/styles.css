@@ -555,6 +555,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--white-background);
 }
+.subscribe-container{
+  margin-left: 80px;
+}
 .subscribe-form{
   display: flex;
   gap: 24px;
@@ -748,14 +751,20 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;   
+  margin-right: 8px;
 }
 /* .modal-checkbox{
   background-color: var(--white-background);
 } */
-.terms-checkbox:checked + .span-checkbox{
+/* .terms-checkbox:checked + .span-checkbox{
   background-color: var(--pressed-state);
   border: none;
   fill: var(--light);
+} */
+.terms-checkbox:checked+.label-checkbox>.span-checkbox {
+  background-color: var(--pressed-state);
+    border: none;
+    fill: var(--light);
 }
 
 .link-checkbox{
